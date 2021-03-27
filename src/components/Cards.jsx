@@ -1,5 +1,7 @@
 import React from 'react'
 import githublogo from '../assets/static/github.png'
+import twitterLogo from '../assets/static/twitter.png'
+import instagramLogo from '../assets/static/instagram.png'
 import '../assets/styles/components/Cards.scss'
 
 const Cards = ({ data }) => {
@@ -26,10 +28,10 @@ const Cards = ({ data }) => {
         </div>
         <div className="card_social">
           <a href="https://twitter.com/MagoJeanMaster">
-            <img src="" />
+            <img src={twitterLogo} />
           </a>
           <a href="https://github.com/JeanMaster">
-            <img src="}" />
+            <img src={instagramLogo}/>
           </a>
           <a href="https://www.instagram.com/jean.hallak/">
             <img src={githublogo} />

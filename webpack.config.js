@@ -9,8 +9,7 @@ module.exports = {
     entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, 'dist'),
-        filename: 'main.js',
-        publicPath: "/",
+        filename: 'main.js'
     },
     resolve: {
         extensions: ['.js', '.jsx'],
@@ -37,7 +36,7 @@ module.exports = {
             },
             {
                 test: /\.s[ac]ss$/,
-                use: ["style-loader", "css-loader" ],
+                use: ["style-loader", "css-loader","sass-loader" ],
             },
             {
                 test: /\.(png|gif|jpg)$/,
